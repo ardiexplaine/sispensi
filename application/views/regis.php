@@ -64,7 +64,7 @@
 		<div id="ztxtAppsMsg"></div>
 		<div class="login_box">
 		<div class="alert alert-info" role="alert">
-			<a href="#" class="alert-link"><strong>INFO!</strong> Untuk yang pertama kali login, diwajibkan mengisi from dibawah ini.</a>
+			<a href="#" class="alert-link"><strong>INFO!</strong> Untuk pertama kali login, diwajibkan mengisi from dibawah ini.</a>
 		</div>	
 			<div class="cnt_c">
 				<input type="hidden" id="txtUsrcd" value="<?php echo $this->session->userdata('usrcd'); ?>">

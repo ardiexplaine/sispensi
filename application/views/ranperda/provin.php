@@ -155,7 +155,7 @@
                                                     <label for="fileFL01" class="col-lg-2 control-label">Surat Pengantar</label>
                                                     <div class="col-lg-4">
                                                         <input type="file" class="input-sm form-control" id="fileFL01">
-                                                        <span class="help-block">* File yang hanya perbolehkan pdf, jpg, png, rar</span>
+                                                        <span class="help-block" style="color:#FF0000;">* Wajib isi, File yang diperbolehkan hanya pdf, jpg, png</span>
                                                     </div>
                                                     <div class="col-lg-3">
                                                         <div id="btnFL01"></div>
@@ -166,7 +166,7 @@
                                                     <label for="fileFL02" class="col-lg-2 control-label">Kesepakatan DPRD</label>
                                                     <div class="col-lg-4">
                                                         <input type="file" class="input-sm form-control" id="fileFL02">
-                                                        <span class="help-block">* File yang hanya perbolehkan pdf, jpg, png, rar</span>
+                                                        <span class="help-block" style="color:#FF0000;">* Wajib isi, File yang diperbolehkan hanya pdf, jpg, png</span>
                                                     </div>
                                                     <div class="col-lg-3">
                                                         <div id="btnFL02"></div>
@@ -187,7 +187,7 @@
                                                     <label for="fileRancanganPerda" class="col-lg-2 control-label">Upload File </label>
                                                     <div class="col-lg-4">
                                                         <input type="file" class="input-sm form-control" name="fileRancanganPerda" id="fileRancanganPerda">
-                                                        <span class="help-block">* Rancangan perda wajib disini, file yang hanya perbolehkan .doc dan .docx</span>
+                                                        <span class="help-block" style="color:#FF0000;">* Wajib isi, File yang diperbolehkan hanya .doc dan .docx</span>
                                                     </div>
                                                     <div class="col-lg-3">
                                                         <button class="btn btn-sm btn-default" id="BTN_ADDITEM_KAB01"><i class="splashy-add_small"></i> Tambah Data</button>
@@ -243,7 +243,7 @@
                                                     <label for="fileRancanganPerdaKP02" class="col-lg-2 control-label">Upload File </label>
                                                     <div class="col-lg-4">
                                                         <input type="file" class="input-sm form-control" name="fileRancanganPerdaKP02" id="fileRancanganPerdaKP02">
-                                                        <span class="help-block">* Rancangan perda wajib disini, file yang hanya perbolehkan .pdf/span>
+                                                        <span class="help-block" style="color:#FF0000;">* Wajib isi, File yang diperbolehkan hanya .pdf</span>
                                                     </div>
                                                     <div class="col-lg-3">
                                                         <button class="btn btn-sm btn-default" id="BTN_ADDITEM_KAB02"><i class="splashy-add_small"></i> Tambah Data</button>
@@ -321,7 +321,7 @@
                                                     <label for="fileFL04" class="col-lg-2 control-label">Upload File Surat Pengantar</label>
                                                     <div class="col-lg-4">
                                                         <input type="file" class="input-sm form-control" id="fileFL04">
-                                                        <span class="help-block">* File yang hanya perbolehkan pdf, jpg, png, rar</span>
+                                                        <span class="help-block" style="color:#FF0000;">* Wajib isi, File yang diperbolehkan hanya pdf, jpg, png</span>
                                                     </div>
                                                     <div class="col-lg-3">
                                                         <div id="btnFL04"></div>
@@ -342,7 +342,7 @@
                                                     <label for="fileRancanganPerdaKM01" class="col-lg-2 control-label">Upload File </label>
                                                     <div class="col-lg-4">
                                                         <input type="file" class="input-sm form-control" name="fileRancanganPerdaKM01" id="fileRancanganPerdaKM01">
-                                                        <span class="help-block">* Rancangan perda wajib disini, file yang hanya perbolehkan .pdf</span>
+                                                        <span class="help-block" style="color:#FF0000;">* Wajib isi, File yang diperbolehkan hanya .pdf</span>
                                                     </div>
                                                     <div class="col-lg-3">
                                                         <button class="btn btn-sm btn-default" id="BTN_ADDITEM_KEM01"><i class="splashy-add_small"></i> Tambah Data</button>

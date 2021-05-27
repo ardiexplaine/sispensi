@@ -58,7 +58,7 @@
 
     });
 </script>
-<h3 class="heading">RANPERDA INDUK</h3>
+<h3 class="heading">PROFIL PIC</h3>
 
 
     <div class="row">
@@ -182,7 +182,7 @@
             <div id="divslcIsActive" class="form-group">
                 <label for="slcIsActive" class="col-lg-2 control-label">Is Active</label>
                 <div class="col-lg-4">
-                    <select class="input-sm form-control" id="slcIsActive">
+                    <select class="input-sm form-control" id="slcIsActive" disabled="disabled">
                         <option value="Y" selected>Aktif</option>
                         <option value="N">Tidak Aktif</option>
                     </select>

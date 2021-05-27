@@ -104,9 +104,6 @@
     <div class="row">
         <div class="col-sm-7 col-md-7">
             <div id="zbtnAction" class="form-actions">
-                <?php if($this->session->userdata('user_type') != 'KEM') { ?>
-                <button class="btn btn-sm btn-default" id="ADD_NEW" value="<?php echo $this->session->userdata('user_type'); ?>"><i class="splashy-add_small"></i> Tambah Pengajuan Baru</button>
-                <?php } ?>
                 <button class="btn btn-sm btn-default" id="BTN_SEARCH"><i class="splashy-zoom"></i> Cari Dokumen</button>
             </div>
         </div>

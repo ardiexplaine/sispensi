@@ -4,11 +4,48 @@
             <a class="brand pull-left" href="<?php echo base_url('dashboard');?>">SISPENSI PDRD</a>
             <ul class="nav navbar-nav">
                 <li><a href="<?php echo base_url('dashboard');?>"><i class="splashy-home_green"></i> Beranda</a></li>
-                <li><a href="<?php echo base_url('ranperda');?>"><i class="splashy-document_a4_marked"></i> Ranperda</a></li>
-                <li><a data-toggle="modal" id="zbtnModalNotification" data-backdrop="static" href="#myNotification" data-placement="bottom" data-container="body"><i class="splashy-mail_light"></i> Pemberitahuan</a></li>
-                <?php if($this->session->userdata('level') == 'Y') { ?>
                 <li class="dropdown">
-                    <a data-toggle="dropdown" class="dropdown-toggle" href="#"><i class="splashy-sprocket_light"></i> Pengaturan <b class="caret"></b></a>
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#"><i class="splashy-information"></i> 1. Baca Regulasi dan Panduan<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="<?php echo base_url('assets/files/doksample.pdf');?>" target="_blank"><i class="splashy-folder_modernist_opened"></i> Regulasi</a></li>
+                        <li><a href="#"><i class="splashy-folder_modernist_opened"></i> Panduan Aplikasi</a></li>
+                        <li><a href="<?php echo base_url('assets/files/matrik_evaluasi.doc');?>" target="_blank"><i class="splashy-folder_modernist_opened"></i> Template Matrik Evaluasi DOC</a></li>
+                    </ul>
+                </li>
+                
+                <?php 
+                        if($this->session->userdata('user_type') == 'KAB') {
+                ?>            
+                    <li><a href="<?php echo base_url('ranperda/kabkot');?>"><i class="splashy-document_a4_marked"></i> 2. Kirim Dokumen Ranperda</a></li>        
+                    <li><a href="<?php echo base_url('ranperda');?>"><i class="splashy-view_list"></i> 3. Pencarian</a></li>
+                    <li><a data-toggle="modal" id="zbtnModalNotification" data-backdrop="static" href="#myNotification" data-placement="bottom" data-container="body"><i class="splashy-mail_light"></i> 5. Pemberitahuan</a></li>
+                <?php
+                        }
+                        if($this->session->userdata('user_type') == 'PRO')
+                        {
+                ?>
+                    <li><a href="<?php echo base_url('ranperda/provin');?>"><i class="splashy-document_a4_marked"></i> 2. Kirim Dokumen Ranperda</a></li>
+                    <li><a href="<?php echo base_url('ranperda');?>"><i class="splashy-view_list"></i> 3. Pencarian</a></li>
+                    <li><a data-toggle="modal" id="zbtnModalNotification" data-backdrop="static" href="#myNotification" data-placement="bottom" data-container="body"><i class="splashy-mail_light"></i> 5. Pemberitahuan</a></li>
+                <?php                           
+                        }
+                ?>
+                
+                
+                
+                
+                <?php if($this->session->userdata('level') == 'Y') { ?>
+                    <li><a data-toggle="modal" id="zbtnModalNotification" data-backdrop="static" href="#myNotification" data-placement="bottom" data-container="body"><i class="splashy-mail_light"></i> 2. Pemberitahuan</a></li>
+                <li><a href="<?php echo base_url('ranperda');?>"><i class="splashy-view_list"></i> 3. Pencarian</a></li>
+                <li class="dropdown">
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#"><i class="splashy-sprocket_light"></i> 4. Laporan <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="<?php echo base_url('profile');?>"><i class="splashy-group_blue"></i> Daftar Hasil Evaluasi</a></li>
+                        <li><a href="<?php echo base_url('profile/pusat');?>"><i class="splashy-contact_blue_add"></i> Daftar Hasil Evaluasi</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#"><i class="splashy-sprocket_light"></i> 5. Pengaturan <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li><a href="<?php echo base_url('profile');?>"><i class="splashy-group_blue"></i> Users Daerah</a></li>
                         <li><a href="<?php echo base_url('profile/pusat');?>"><i class="splashy-contact_blue_add"></i> Admin Pusat</a></li>

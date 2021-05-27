@@ -24,7 +24,7 @@
 
     });
 </script>
-<h3 class="heading">RANPERDA INDUK > <i>KABUPATEN KOTA</i></h3>
+<h3 class="heading">RANPERDA > <i>KABUPATEN KOTA</i></h3>
 
 <div class="row">
     <div class="col-sm-8 col-md-8">

@@ -16,7 +16,7 @@
 |	['username'] The username used to connect to the database
 |	['password'] The password used to connect to the database
 |	['database'] The name of the database you want to connect to
-|	['dbdriver'] The database type. ie: mysql.  Currently supported:
+i|	['dbdriver'] The database type. ie: mysql.  Currently supported:
 				 mysql, mysqli, postgre, odbc, mssql, sqlite, oci8
 |	['dbprefix'] You can add an optional prefix, which will be added
 |				 to the table name when using the  Active Record class
@@ -50,7 +50,7 @@ $active_record = TRUE;
 
 $db['default']['hostname'] = 'localhost';
 $db['default']['username'] = 'root';
-$db['default']['password'] = '123';
+$db['default']['password'] = '';
 $db['default']['database'] = 'sispensi2';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
@@ -63,13 +63,6 @@ $db['default']['dbcollat'] = 'utf8_general_ci';
 $db['default']['swap_pre'] = '';
 $db['default']['autoinit'] = TRUE;
 $db['default']['stricton'] = FALSE;
-
-
-// $db['default']['hostname'] = 'keuda.kemendagri.go.id';
-// $db['default']['username'] = 'root';
-// $db['default']['password'] = 'K3ud4db@dmin';
-// $db['default']['database'] = 'sispensi';
-
 
 
 /* End of file database.php */
