@@ -99,7 +99,8 @@
             <ul class="nav nav-tabs">
                 <li id="tabpro" class="active"><a href="#tab1" data-toggle="tab">Provinsi</a></li>
                 <li id="tabkem"><a href="#tab2" data-toggle="tab">Kemendagri</a></li>
-                <li id="tabhistory"><a href="#tab3" data-toggle="tab">Riwayat</a></li>
+                <li id="tabkem"><a href="#tab3" data-toggle="tab">Kemenkeu</a></li>
+                <li id="tabhistory"><a href="#tab4" data-toggle="tab">Riwayat</a></li>
             </ul>
 
             <div class="tab-content">
@@ -362,6 +363,104 @@
                     </div>
                 </div>
                 <div class="tab-pane" id="tab3">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12">
+                            <div class="form-horizontal" role="form">
+
+                                <div class="panel-group" id="accordion">
+
+                                    <div id="accKepmen" class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapsekem1">Penyampaian Keputusan Mendagri</a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapsekem1" class="panel-collapse collapse in">
+                                            <div class="panel-body">
+
+                                                <div id="divtxtSPBupati" class="form-group">
+                                                    <label for="txtSPBupati" class="col-lg-2 control-label">No. Surat Pengantar Gubernur</label>
+                                                    <div class="col-lg-4">
+                                                        <input type="text" class="input-sm form-control" id="txtSPBupati-prov" disabled>
+                                                    </div>
+                                                </div>
+
+                                                <div id="divtxtSpMdn" class="form-group">
+                                                    <label for="txtSpMdn" class="col-lg-2 control-label">No. Surat Pengantar KDN</label>
+                                                    <div class="col-lg-4">
+                                                        <input type="text" class="input-sm form-control" id="txtSpMdn">
+                                                    </div>
+                                                </div>
+
+                                                <div id="divdatetglSP3" class="form-group">
+                                                    <label for="datetglSP3" class="col-lg-2 control-label">Tanggal Surat Pengantar</label>
+                                                    <div class="col-lg-2">
+                                                        <div class="input-group date" id="tglSP3" data-date-format="yyyy-mm-dd">
+                                                            <input class="input-sm form-control" id="datetglSP3" type="text">
+                                                            <span class="input-group-addon"><i class="splashy-calendar_day"></i></span>
+                                                        </div>
+                                                    </div>
+                                                </div>                           
+
+                                                <div id="divtxtKemDesc" class="form-group">
+                                                    <label for="txtKemDesc" class="col-lg-2 control-label">Prihal Surat</label>
+                                                    <div class="col-lg-6">
+                                                        <input type="text" class="input-sm form-control" id="txtKemDesc" >
+                                                    </div>
+                                                </div>
+
+                                                <div id="divtxtKemIsiSurat" class="form-group">
+                                                    <label for="txtKemIsiSurat" class="col-lg-2 control-label">Isi Surat/Rincian Ranperda</label>
+                                                    <div class="col-lg-6">
+                                                        <textarea class="input-sm form-control" rows="4" cols="50" id="txtKemIsiSurat" ></textarea>
+                                                    </div>
+                                                </div>
+
+                                                <div id="divfileFL04" class="form-group">
+                                                    <label for="fileFL04" class="col-lg-2 control-label">Upload File Surat Pengantar</label>
+                                                    <div class="col-lg-4">
+                                                        <input type="file" class="input-sm form-control" id="fileFL04">
+                                                        <span class="help-block" style="color:#FF0000;">* Wajib isi, File yang diperbolehkan hanya pdf, jpg, png</span>
+                                                    </div>
+                                                    <div class="col-lg-3">
+                                                        <div id="btnFL04"></div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="formSep"></div>
+                                                <h4>Keputusan Mendagri</h4><br/>
+
+                                                <div id="divtxtDescFilesKM01" class="form-group">
+                                                    <label for="txtDescFilesKM01" class="col-lg-2 control-label">Deskripsi File </label>
+                                                    <div class="col-lg-4">
+                                                        <input type="text" class="input-sm form-control" id="txtDescFilesKM01" >
+                                                    </div>
+                                                </div>
+
+                                                <div id="divfileRancanganPerdaKM01" class="form-group">
+                                                    <label for="fileRancanganPerdaKM01" class="col-lg-2 control-label">Upload File </label>
+                                                    <div class="col-lg-4">
+                                                        <input type="file" class="input-sm form-control" name="fileRancanganPerdaKM01" id="fileRancanganPerdaKM01">
+                                                        <span class="help-block" style="color:#FF0000;">* Wajib isi, File yang diperbolehkan hanya .pdf</span>
+                                                    </div>
+                                                    <div class="col-lg-3">
+                                                        <button class="btn btn-sm btn-default" id="BTN_ADDITEM_KEM01"><i class="splashy-add_small"></i> Tambah Data</button>
+                                                    </div>
+                                                </div>
+
+                                                <div id="tblKM01"></div>
+
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="tab4">
                     <table id="tblHistory" class="display" style="width:100%">
                         <thead>
                             <tr>

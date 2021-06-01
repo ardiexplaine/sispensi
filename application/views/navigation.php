@@ -17,7 +17,13 @@
                         if($this->session->userdata('user_type') == 'KAB') {
                 ?>            
                     <li><a href="<?php echo base_url('ranperda/kabkot');?>"><i class="splashy-document_a4_marked"></i> 2. Kirim Dokumen Ranperda</a></li>        
-                    <li><a href="<?php echo base_url('ranperda');?>"><i class="splashy-view_list"></i> 3. Pencarian</a></li>
+                    <li class="dropdown">
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#"><i class="splashy-information"></i> 3. Pencarian</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="<?php echo base_url('profile/pusat');?>"><i class="splashy-contact_blue_add"></i> PIC Pusat</a></li>
+                        <li><a href="<?php echo base_url('ranperda');?>"><i class="splashy-view_list"></i> Pencarian Dokumen</a></li>
+                    </ul>
+                    </li>
                     <li><a data-toggle="modal" id="zbtnModalNotification" data-backdrop="static" href="#myNotification" data-placement="bottom" data-container="body"><i class="splashy-mail_light"></i> 5. Pemberitahuan</a></li>
                 <?php
                         }
@@ -25,23 +31,37 @@
                         {
                 ?>
                     <li><a href="<?php echo base_url('ranperda/provin');?>"><i class="splashy-document_a4_marked"></i> 2. Kirim Dokumen Ranperda</a></li>
-                    <li><a href="<?php echo base_url('ranperda');?>"><i class="splashy-view_list"></i> 3. Pencarian</a></li>
+                    <li class="dropdown">
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#"><i class="splashy-information"></i> 3. Pencarian</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="<?php echo base_url('profile/pusat');?>"><i class="splashy-contact_blue_add"></i> PIC Pusat</a></li>
+                        <li><a href="<?php echo base_url('ranperda');?>"><i class="splashy-view_list"></i> Pencarian Dokumen</a></li>
+                    </ul>
+                    </li>
                     <li><a data-toggle="modal" id="zbtnModalNotification" data-backdrop="static" href="#myNotification" data-placement="bottom" data-container="body"><i class="splashy-mail_light"></i> 5. Pemberitahuan</a></li>
+                <?php                           
+                        }
+                        if($this->session->userdata('user_type') == 'KEM')
+                        {
+                ?>
+                    <li class="dropdown">
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#"><i class="splashy-information"></i> 2. Pencarian</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="<?php echo base_url('profile/pusat');?>"><i class="splashy-contact_blue_add"></i> PIC Pusat</a></li>
+                        <li><a href="<?php echo base_url('ranperda');?>"><i class="splashy-view_list"></i> Pencarian Dokumen</a></li>
+                    </ul>
+                    </li>
+                    <li><a data-toggle="modal" id="zbtnModalNotification" data-backdrop="static" href="#myNotification" data-placement="bottom" data-container="body"><i class="splashy-mail_light"></i> 3. Pemberitahuan</a></li>
                 <?php                           
                         }
                 ?>
                 
-                
-                
-                
                 <?php if($this->session->userdata('level') == 'Y') { ?>
-                    <li><a data-toggle="modal" id="zbtnModalNotification" data-backdrop="static" href="#myNotification" data-placement="bottom" data-container="body"><i class="splashy-mail_light"></i> 2. Pemberitahuan</a></li>
-                <li><a href="<?php echo base_url('ranperda');?>"><i class="splashy-view_list"></i> 3. Pencarian</a></li>
                 <li class="dropdown">
                     <a data-toggle="dropdown" class="dropdown-toggle" href="#"><i class="splashy-sprocket_light"></i> 4. Laporan <b class="caret"></b></a>
                     <ul class="dropdown-menu">
-                        <li><a href="<?php echo base_url('profile');?>"><i class="splashy-group_blue"></i> Daftar Hasil Evaluasi</a></li>
-                        <li><a href="<?php echo base_url('profile/pusat');?>"><i class="splashy-contact_blue_add"></i> Daftar Hasil Evaluasi</a></li>
+                        <li><a href="<?php echo base_url('hasilevaluasi1');?>"><i class="splashy-group_blue"></i> Daftar Hasil Evaluasi</a></li>
+                        <li><a href="<?php echo base_url('hasilevaluasi2');?>"><i class="splashy-contact_blue_add"></i> Daftar Hasil Evaluasi</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">

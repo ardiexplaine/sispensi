@@ -222,18 +222,28 @@
 
 <div style="border-radius: 10px; border: 1px solid grey;padding: 10px; width: 100%;height: 100%;">
     <div class="row">
-        <div class="col-sm-6 col-md-6">
+        <div class="col-sm-12 col-md-12">
             <div class="tabbable tabbable-bordered">
                 <table id="tblDashboard" class="display" style="width:100%">
                     <thead>
                         <tr>
                             <th>No</th>
-                            <th>Status</th>
-                            <th>Jumlah</th>
+                            <th>NDI</th>
+                            <th>Daerah</th>
+                            <th>No.Surat Kab/Kota <br> tanggal surat</th>
+                            <th>tgl Diterima lengkap</th>
+                            <th>Surat Kemenkeu <br> tanggal surat</th>
+                            <th>Surat Kemendagri <br> tanggal surat</th>
+                            <th>Surat Provinsi <br> tanggal surat</th>
+                            <th>Stattus</th>
+                            <th>Sisa Hari kerja</th>
+                            <th>Tgl. Jatuh Tempo</th>
                         </tr>
                     </thead>
                 </table>
             </div>
         </div>
     </div>
+
+    <span style="font-style: italic; color:red;">*Double klik untuk mengakses informasi detail</span>
 </div>
